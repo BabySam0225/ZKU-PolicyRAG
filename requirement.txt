@@ -1,0 +1,45 @@
+Web / API
+fastapi>=0.95.0
+uvicorn[standard]>=0.21.0
+gunicorn>=20.1.0
+
+Core RAG / pipeline frameworks
+langchain>=0.0.300
+transformers>=4.35.0
+sentence-transformers>=2.2.2
+tokenizers>=0.13.3
+datasets>=2.12.0
+
+Embeddings / Vector DBs
+chromadb>=0.3.23
+faiss-cpu>=1.7.4        # 若使用 CPU 版 FAISS
+pymilvus>=2.3.0         # 若使用 Milvus
+weaviate-client>=3.5.0  # 若使用 Weaviate
+
+LLM / API clients
+openai>=1.0.0
+requests>=2.31.0
+aiohttp>=3.8.4
+
+Dev / utils / data
+numpy>=1.25.0
+pandas>=2.1.0
+scikit-learn>=1.2.2
+python-dotenv>=1.0.0
+tqdm>=4.65.0
+rich>=13.3.0
+
+Optional: small helpers for ingestion / file handling
+python-magic>=0.4.27
+pdfplumber>=0.7.6
+python-docx>=0.8.11
+openpyxl>=3.1.2
+
+Optional: model acceleration / inference (GPU users)
+accelerate>=0.20.3
+bitsandbytes>=0.39.0
+
+Optional: evaluation / testing
+pytest>=7.4.0
+black>=24.3.0
+isort>=5.12.0
